@@ -67,7 +67,7 @@
 
     {{ with .Site.Social.youtube }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://youtube.com/user/{{ . }}" target="_blank"><i class="fa fa-youtube-square fa-fw"></i>YouTube</a>
+      <a class="pure-menu-link" href="https://youtube.com/channel/{{ . }}" target="_blank"><i class="fa fa-youtube-square fa-fw"></i>YouTube</a>
     </li>
     {{ end }}
 
@@ -182,6 +182,12 @@
     {{ with .Site.Social.keybase }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://keybase.io/{{ . }}" target="_blank"><i class="fa fa-key fa-fw"></i>Keybase</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.gitter }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://gitter.im/{{ . }}/chat" target="_blank"><i class="fa fa-github fa-fw"></i>Gitter</a>
     </li>
     {{ end }}
 
