@@ -25,6 +25,8 @@ a:visited {
 
 article > footer {
   text-align: right;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
 }
 
 .prev-next-post {
