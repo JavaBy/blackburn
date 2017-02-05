@@ -77,3 +77,9 @@ i {
 .pagination a {
   color: #265778;
 }
+
+.post_photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
