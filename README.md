@@ -4,13 +4,14 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 
 ## Overview
 
-* Based on Yahoo's [Pure CSS] (http://purecss.io/) (v0.6.0)
+* Based on Yahoo's [Pure CSS] (http://purecss.io/) (v0.6.2)
 * Fixed sidebar with social links:
   * Twitter
   * GNU social
   * Facebook
   * Google+
   * Weibo
+  * Tumblr
   * Instagram
   * Flickr
   * Pinterest
@@ -23,16 +24,19 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
   * Reddit
   * Hacker News
   * GitHub
+  * GitLab
   * Bitbucket
   * Stack Overflow
   * Server Fault
   * Steam
+  * MobyGames
   * Last.fm
+  * Discogs
   * Keybase
-* Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.1.0)
+* Client-side syntax highlighting by [Highlight.js](//highlightjs.org) (v9.11.0)
 * Web analytics by Google Analytics
 * Comments by Disqus
-* Icons by Font Awesome (v4.5.0)
+* Icons by Font Awesome (v4.7.0)
 
 ## Demo
 
@@ -41,7 +45,7 @@ Blackburn is a clear and responsive theme for [Hugo](//gohugo.io).
 
 ## Screenshots
 
-![screenshot](/images/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/yoshiharuyamashita/blackburn/master/images/screenshot.png)
 
 ## Installation
 
@@ -62,7 +66,7 @@ See [Hugo Quickstart Guide](//gohugo.io/overview/quickstart/) for more informati
 Example config.toml:
 
 ```toml
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://www.example.com/" # Make sure to end baseurl with a '/'
 title = "Your site title"
 author = "Your name"
 # Shown in the side menu
@@ -124,6 +128,7 @@ paginate = 10
   facebook = "*"
   googleplus = "*"
   weibo = "*"
+  tumblr = "*"
 
   # SNS photo/video sharing
   instagram = "*"
@@ -144,15 +149,18 @@ paginate = 10
 
   # Techie
   github = "yoshiharuyamashita"
+  gitlab = "*"
   bitbucket = "*"
   stackoverflow = "*"
   serverfault = "*"
 
   # Gaming
   steam = "*"
+  mobygames = "*"
 
   # Music
   lastfm = "*"
+  discogs = "*"
 
   # Other
   keybase = "*"

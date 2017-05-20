@@ -1,9 +1,9 @@
 <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    {{ if .RSSlink }}
+    {{ if .RSSLink }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="{{ .RSSlink }}"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="{{ .RSSLink }}"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
     {{ end }}
 
@@ -36,6 +36,12 @@
     {{ with .Site.Social.weibo }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="http://weibo.com/{{ . }}" target="_blank"><i class="fa fa-weibo fa-fw"></i>Weibo</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.tumblr }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://{{ . }}.tumblr.com/" target="_blank"><i class="fa fa-tumblr-square fa-fw"></i>Tumblr</a>
     </li>
     {{ end }}
 
@@ -119,6 +125,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.gitlab }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://gitlab.com/{{ . }}" target="_blank"><i class="fa fa-gitlab fa-fw"></i>GitLab</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.bitbucket }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://bitbucket.org/{{ . }}" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
@@ -145,11 +157,23 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.mobygames }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.mobygames.com/developer/sheet/view/developerId,{{ . }}" target="_blank"><i class="fa fa-gamepad fa-fw"></i>MobyGames</a>
+    </li>
+    {{ end }}
+
     <!-- Music -->
 
     {{ with .Site.Social.lastfm }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="http://last.fm/user/{{ . }}" target="_blank"><i class="fa fa-lastfm-square fa-fw"></i>Last.fm</a>
+    </li>
+    {{ end }}
+
+    {{ with .Site.Social.discogs }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://www.discogs.com/user/{{ . }}" target="_blank"><i class="fa fa-music fa-fw"></i>Discogs</a>
     </li>
     {{ end }}
 
